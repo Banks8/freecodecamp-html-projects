@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart</h2>
+        <fieldset>
+            <legend>Selected Items</legend>
+            <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="A picture of a twisted rubrics cube">
+
+            <fieldset>
+                <legend>Total Amount</legend>
+                <p>Rubrics Cube: R80.00</p>
+                <p>Shipping Cost: R50.00</p>
+                <p>Total Amount:R130.00</p>
+            </fieldset>
+
+        </fieldset>
+    </section>
+
+    <section>
+        <h2>Payment Information</h2>
+        <fieldset>
+            <legend>Enter Card Information</legend>
+            <form>
+                <label for="card-name"><span aria-hidden="true">*</span>Card name:</label>
+                <input type="text" id="card-name" name="card-name" required>
+                <br>
+                <label for="card-number"> 
+                    <span aria-hidden="true">*</span>Card number:</label>
+                <input type="text" id="card-number" name="card-number" aria-describedby="card-number-help" required>
+                <p id="card-number-help"><small>Valid Card Number format 1234-5678-9000</small></p>
+
+                <label for="cvc-number"><span aria-hidden="true">*</span>Enter CVC Number:</label>
+                <input type="text" id="cvc-number" name="cvc-number" required>
+                <label for="expiry-date"><span aria-hidden="true">*</span>Enter Card Expiry date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" required>
+            </form>
+        </fieldset>
+    </section>
+
+    <input type="submit" value="Place Order" id="order-button">
+</body>
+
+</html>

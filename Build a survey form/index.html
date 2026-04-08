@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Youth Survey Form</h1>
+    <p id="description">We appreciate you taking the time to complete our survey.</p>
+
+    <form id="survey-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name" id="name-label">Full Name:</lable>
+                <input id="name" type="text" placeholder="John Doe" required />
+                <br />
+
+                <label for="email" id="email-label">Email Address:</label>
+                <input id="email" type="email" placeholder="Example@email.com" required />
+
+                <br />
+
+                <label for="number" id="number-label">Age:</label>
+                <input id="number" type="number" min="13" max="18" placeholder="select" required />
+
+                <select id="dropdown" required>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+        </fieldset>
+        <br />
+
+        <fieldset name="subjects">
+            <legend>Subject Choices</legend>
+            <p>Which subjects stream do you prefer?</p>
+            <label for="sceince-stream">Science</label>
+            <input id="science-stream" type="radio" value="science" name="subjects">
+
+            <label for="commerce-stream">Commerce</label>
+            <input id="commerce-stream" type="radio" value="commerce" name="subjects">
+
+            <label for="tourism-stream">Tourism</label>
+            <input id="tourism-stream" type="radio" value="tourism" name="subjects">
+        </fieldset>
+
+        <fieldset>
+            <legend>Plans After High School</legend>
+
+            <label for="university">University<label>
+                    <input id="university" value="university" type="checkbox">
+
+                    <label for="college">College</label>
+                    <input id="college" value="college" type="checkbox">
+
+                    <label for="employment">Employemnt</label>
+                    <input id="employment" value="employment" type="checkbox">
+        </fieldset>
+
+        <fieldset>
+            <legend>More Information</legend>
+            <label for="more-info">Which subjects stream do you prefer?</label>
+            <textarea id="more-info" placeholder="Enter Your Answer Here"></textarea>
+        </fieldset>
+
+        <button type="submit" id="submit" value="Submit Form">Submit Form</button>
+
+    </form>
+
+</body>
+
+</html>
